@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- ! Weahter api CDN -->
+   
+    <!-- ! Weahter api CDN -->
+</head>
+<body>
+<main>
+    <nav id class="navbar navbar-expand-lg pt-5 p-5">
+        <div class="container-fluid">
+        <img src="images/logo.png" width="50px" alt="">
+        <a class="navbar-brand text-white ps-2" href="#">Weather API</a> 
+          <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav navbar text-white pe-5 ms-auto mb-lg-0">
+                    <li class="nav-item mt-3 rounded-pill">
+                        <a class="nav-link  active text-white" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item mt-3 rounded-pill">
+                        <a class="nav-link" href="#">News</a>
+                      </li>
+                      <li class="nav-item mt-3 rounded-pill">
+                        <a class="nav-link" href="#">Contact</a>
+                      </li>
+                      <li class="nav-item mt-3 rounded-pill">
+                        <a class="nav-link" href="#">About Us</a>
+                      </li>
+           
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </main>
+    <!-- * END OF MAIN CODE -->
+    <div class="padding-section"></div>
+        <section >
+            <div  class="search-bar text-center position-relative">
+                <input id="searchBar" type="search" class=" w-75 position-relative rounded-pill ps-4" placeholder="Search for weather">
+                <button onclick="selectedCountry()" class="searchBtn btn btn-primary rounded-pill position-absolute">Search</button>
+                </div>
+        <div class="container">
+
+        </div>
+         
+        </section>
+        <div class="padding-section"></div>
+<footer class="bg-danger-subtle">
+ <div class="container">
+    <div class="row pt-5">
+        <div class="col-md-8">
+            <div class="footer-item">
+            <div class="input-btns position-relative">
+                <input type="text" class="w-100 rounded-pill ps-3" placeholder="Enter your email please">
+                <button id="subscribeBtn" class="btn btn-outline-primary rounded-pill position-absolute">Subscribe</button>
+            </div>
+            <p class="text-muted mt-4">  Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </div>
+
+
+        <div class="col-md-4">
+            <div class="footer-items">
+<div class="footer-icons">
+    <i class="fa-brands fa-facebook-f"></i>
+</div>
+<div class="footer-icons">
+    <i class="fa-brands fa-twitter"></i>
+</div>
+<div class="footer-icons">
+    <i class="fa-brands fa-google-plus"></i>
+</div>
+<div class="footer-icons">
+    <i class="fa-brands fa-pinterest-p"></i>
+</div>
+        </div>
+    </div>
+            </div>
+ </div>
+</footer>
+
+
+
+
+    <script src="JS/index.js"></script>
+    <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
