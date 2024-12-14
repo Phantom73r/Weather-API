@@ -1,43 +1,3 @@
-// var counter=0;
-
-//readstate
-
-
-// 0 ==> not initialized
-// 1 ==> Send request
-// 2 ==> request is recieved in the server
-// 3==> the request is being processed
-// 4 ==> the response is here and ready to handle
-
-
-// function imgDisplay(){
-
-//        if(counter<5){
-//         var img=document.createElement('img')
-
-
-//         console.log(img);
-        
-//         img.src= '5.jpg'
-        
-//         img.setAttribute('alt', 'test image')
-//         img.classList.add('w-25', 'rounded-circle')
-        
-//         document.body.appendChild(img)
-//         counter++;
-
-//        }
-
-// }
-
-
-// var intervalImage= setInterval(imgDisplay, 500)
-
-// document.addEventListener('click', function (e){
-// clearInterval(intervalImage)
-// })
-
-
 var request=new XMLHttpRequest()
 let searchedCountry=document.querySelector('#searchBar')
 var searched='london'
@@ -71,7 +31,7 @@ var box=``
             </div>
                 <div class="card-body">
                     <h2 class="display-5 text-capitalize">${request.response.location.name}</h2>
-                    <h2 class="display-1 text-center">${allData.forecastday[0].day.mintemp_c}<sup>o</sup>C</h2>
+                    <h2 class="display-1 text-center">${allData.forecastday[0].day.maxtemp_c}<sup>o</sup>C</h2>
                     <img src="https://${allData.forecastday[0].day.condition.icon}" width="50px" alt="">
                     <h4 class='mb-3'>
                  ${allData.forecastday[0].day.condition.text}
@@ -139,19 +99,7 @@ var box=``
        }
 document.querySelector('.container').innerHTML=box
 }
-//                                          //* load works only when the response is ready.
 )
-// request.addEventListener('error', ()=>{
-//        if(request.readyState==4){
-
-
-//        console.log('error');//* error works only when the response isn't ready.
-
-              
-//        }
-// })
-
-//* sends the data i want to deal with
 
 
 
